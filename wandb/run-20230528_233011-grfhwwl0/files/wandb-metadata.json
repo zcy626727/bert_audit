@@ -1,0 +1,139 @@
+{
+    "os": "Linux-6.3.4-arch1-1-x86_64-with-glibc2.17",
+    "python": "3.8.16",
+    "heartbeatAt": "2023-05-28T15:30:38.386618",
+    "startedAt": "2023-05-28T15:30:11.259514",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/zcy/Workspace/code/Python/roberta-base-cold/text_train_model/main.py",
+    "codePath": "text_train_model/main.py",
+    "host": "archlinux",
+    "username": "zcy",
+    "executable": "/home/zcy/.conda/envs/neuralkg/bin/python",
+    "cpu_count": 14,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 1776.6436999999999,
+        "min": 800.0,
+        "max": 4220.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 999.729,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 800.218,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 957.597,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 1700.0,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 2700.0,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 799.599,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 2700.0,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 800.188,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 2700.0,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 1377.119,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 800.801,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 800.65,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2700.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1503.046,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2700.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 800.894,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 800.632,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2700.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2700.0,
+            "min": 800.0,
+            "max": 3500.0
+        }
+    ],
+    "disk": {
+        "total": 456.6884765625,
+        "used": 77.42811584472656
+    },
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "memory_total": 8585740288
+        }
+    ],
+    "memory": {
+        "total": 31.073123931884766
+    }
+}

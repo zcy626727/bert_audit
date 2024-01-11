@@ -1,0 +1,858 @@
+2023-05-28 23:30:11,272 INFO    StreamThr :106249 [internal.py:wandb_internal():86] W&B internal server running at pid: 106249, started at: 2023-05-28 23:30:11.272049
+2023-05-28 23:30:11,278 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status
+2023-05-28 23:30:11,279 INFO    WriterThread:106249 [datastore.py:open_for_write():85] open: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/run-grfhwwl0.wandb
+2023-05-28 23:30:11,281 DEBUG   SenderThread:106249 [sender.py:send():375] send: header
+2023-05-28 23:30:11,281 DEBUG   SenderThread:106249 [sender.py:send():375] send: run
+2023-05-28 23:30:16,277 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:30:21,280 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:30:26,283 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:30:31,285 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:30:34,276 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: check_version
+2023-05-28 23:30:34,285 INFO    SenderThread:106249 [dir_watcher.py:__init__():219] watching files in: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files
+2023-05-28 23:30:34,285 INFO    SenderThread:106249 [sender.py:_start_run_threads():1124] run started: grfhwwl0 with start time 1685287811.269275
+2023-05-28 23:30:34,286 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: summary_record
+2023-05-28 23:30:34,286 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:30:34,288 INFO    SenderThread:106249 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-28 23:30:34,289 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: check_version
+2023-05-28 23:30:35,292 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_created():278] file/dir created: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/wandb-summary.json
+2023-05-28 23:30:38,354 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: run_start
+2023-05-28 23:30:38,360 DEBUG   HandlerThread:106249 [system_info.py:__init__():31] System info init
+2023-05-28 23:30:38,360 DEBUG   HandlerThread:106249 [system_info.py:__init__():46] System info init done
+2023-05-28 23:30:38,361 INFO    HandlerThread:106249 [system_monitor.py:start():181] Starting system monitor
+2023-05-28 23:30:38,362 INFO    HandlerThread:106249 [system_monitor.py:probe():201] Collecting system info
+2023-05-28 23:30:38,362 INFO    SystemMonitor:106249 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-28 23:30:38,365 INFO    SystemMonitor:106249 [interfaces.py:start():190] Started cpu monitoring
+2023-05-28 23:30:38,367 INFO    SystemMonitor:106249 [interfaces.py:start():190] Started disk monitoring
+2023-05-28 23:30:38,369 INFO    SystemMonitor:106249 [interfaces.py:start():190] Started gpu monitoring
+2023-05-28 23:30:38,372 INFO    SystemMonitor:106249 [interfaces.py:start():190] Started memory monitoring
+2023-05-28 23:30:38,373 INFO    SystemMonitor:106249 [interfaces.py:start():190] Started network monitoring
+2023-05-28 23:30:38,379 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:30:38,386 DEBUG   HandlerThread:106249 [system_info.py:probe():195] Probing system
+2023-05-28 23:30:38,393 DEBUG   HandlerThread:106249 [git.py:repo():40] git repository is invalid
+2023-05-28 23:30:38,393 DEBUG   HandlerThread:106249 [system_info.py:probe():240] Probing system done
+2023-05-28 23:30:38,393 DEBUG   HandlerThread:106249 [system_monitor.py:probe():210] {'os': 'Linux-6.3.4-arch1-1-x86_64-with-glibc2.17', 'python': '3.8.16', 'heartbeatAt': '2023-05-28T15:30:38.386618', 'startedAt': '2023-05-28T15:30:11.259514', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/zcy/Workspace/code/Python/roberta-base-cold/text_train_model/main.py', 'codePath': 'text_train_model/main.py', 'host': 'archlinux', 'username': 'zcy', 'executable': '/home/zcy/.conda/envs/neuralkg/bin/python', 'cpu_count': 14, 'cpu_count_logical': 20, 'cpu_freq': {'current': 1776.6436999999999, 'min': 800.0, 'max': 4220.0}, 'cpu_freq_per_core': [{'current': 800.0, 'min': 800.0, 'max': 4700.0}, {'current': 999.729, 'min': 800.0, 'max': 4700.0}, {'current': 800.218, 'min': 800.0, 'max': 4700.0}, {'current': 957.597, 'min': 800.0, 'max': 4700.0}, {'current': 1700.0, 'min': 800.0, 'max': 4700.0}, {'current': 2700.0, 'min': 800.0, 'max': 4700.0}, {'current': 799.599, 'min': 800.0, 'max': 4700.0}, {'current': 2700.0, 'min': 800.0, 'max': 4700.0}, {'current': 800.188, 'min': 800.0, 'max': 4700.0}, {'current': 2700.0, 'min': 800.0, 'max': 4700.0}, {'current': 1377.119, 'min': 800.0, 'max': 4700.0}, {'current': 800.801, 'min': 800.0, 'max': 4700.0}, {'current': 800.65, 'min': 800.0, 'max': 3500.0}, {'current': 2700.0, 'min': 800.0, 'max': 3500.0}, {'current': 1503.046, 'min': 800.0, 'max': 3500.0}, {'current': 2700.0, 'min': 800.0, 'max': 3500.0}, {'current': 800.894, 'min': 800.0, 'max': 3500.0}, {'current': 800.632, 'min': 800.0, 'max': 3500.0}, {'current': 2700.0, 'min': 800.0, 'max': 3500.0}, {'current': 2700.0, 'min': 800.0, 'max': 3500.0}], 'disk': {'total': 456.6884765625, 'used': 77.42811584472656}, 'gpu': 'NVIDIA GeForce RTX 4060 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4060 Laptop GPU', 'memory_total': 8585740288}], 'memory': {'total': 31.073123931884766}}
+2023-05-28 23:30:38,393 INFO    HandlerThread:106249 [system_monitor.py:probe():211] Finished collecting system info
+2023-05-28 23:30:38,393 INFO    HandlerThread:106249 [system_monitor.py:probe():214] Publishing system info
+2023-05-28 23:30:38,393 DEBUG   HandlerThread:106249 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-05-28 23:30:38,394 DEBUG   HandlerThread:106249 [system_info.py:_save_pip():67] Saving pip packages done
+2023-05-28 23:30:38,395 DEBUG   HandlerThread:106249 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-05-28 23:30:39,289 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_created():278] file/dir created: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/requirements.txt
+2023-05-28 23:30:39,290 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_created():278] file/dir created: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/conda-environment.yaml
+2023-05-28 23:30:40,382 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:30:40,693 DEBUG   HandlerThread:106249 [system_info.py:_save_conda():86] Saving conda packages done
+2023-05-28 23:30:40,695 INFO    HandlerThread:106249 [system_monitor.py:probe():216] Finished publishing system info
+2023-05-28 23:30:40,709 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:30:40,709 DEBUG   SenderThread:106249 [sender.py:send():375] send: files
+2023-05-28 23:30:40,709 INFO    SenderThread:106249 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-05-28 23:30:40,719 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-28 23:30:40,720 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: stop_status
+2023-05-28 23:30:41,290 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/conda-environment.yaml
+2023-05-28 23:30:41,290 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_created():278] file/dir created: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/wandb-metadata.json
+2023-05-28 23:30:42,384 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:30:44,386 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:30:46,398 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:30:46,719 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:30:48,400 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:30:50,423 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:30:51,720 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:30:52,425 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:30:52,703 DEBUG   SenderThread:106249 [sender.py:send():375] send: telemetry
+2023-05-28 23:30:52,704 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:30:52,704 DEBUG   SenderThread:106249 [sender.py:send():375] send: config
+2023-05-28 23:30:52,705 DEBUG   SenderThread:106249 [sender.py:send():375] send: metric
+2023-05-28 23:30:52,706 DEBUG   SenderThread:106249 [sender.py:send():375] send: telemetry
+2023-05-28 23:30:52,706 DEBUG   SenderThread:106249 [sender.py:send():375] send: metric
+2023-05-28 23:30:52,706 WARNING SenderThread:106249 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2023-05-28 23:30:53,309 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_created():278] file/dir created: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:30:54,434 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:30:54,842 WARNING FileStreamThread:106249 [file_stream.py:request_with_retry():670] requests_with_retry encountered retryable exception: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')). func: <bound method Session.post of <requests.sessions.Session object at 0x7f4f6c0f6760>>, args: ('https://api.wandb.ai/files/zcy626727/huggingface/grfhwwl0/file_stream',), kwargs: {'json': {'files': {'wandb-summary.json': {'offset': 0, 'content': ['{}']}}, 'dropped': 0}}
+2023-05-28 23:30:55,299 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:30:55,718 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-28 23:30:55,718 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: stop_status
+2023-05-28 23:30:56,443 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:30:57,300 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:30:57,815 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:30:58,446 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:30:59,301 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:31:00,454 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:01,301 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:31:02,456 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:02,887 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:31:03,302 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:31:04,459 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:05,303 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:31:06,461 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:07,304 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:31:07,936 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:31:08,494 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:09,305 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:31:10,496 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:10,718 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-28 23:31:10,718 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: stop_status
+2023-05-28 23:31:11,306 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:31:12,498 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:13,307 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:31:14,500 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:15,719 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:31:16,524 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:18,555 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:20,608 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:20,720 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:31:21,877 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:31:22,610 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:23,311 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:31:24,613 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:25,312 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:31:25,718 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-28 23:31:25,719 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: stop_status
+2023-05-28 23:31:26,615 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:27,246 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:31:27,313 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:31:28,627 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:30,629 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:32,631 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:34,633 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:36,643 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:38,373 DEBUG   SystemMonitor:106249 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-28 23:31:38,705 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:40,708 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:40,718 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-28 23:31:42,710 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:44,718 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:45,719 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:31:46,721 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:47,068 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-28 23:31:48,723 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:50,720 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:31:50,725 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:52,728 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:54,738 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:55,721 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:31:56,744 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:31:58,746 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:00,722 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:32:00,775 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:02,777 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:02,954 INFO    SenderThread:106249 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/zcy/.conda/envs/neuralkg/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/zcy/.conda/envs/neuralkg/lib/python3.8/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/zcy/.conda/envs/neuralkg/lib/python3.8/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zcy/.conda/envs/neuralkg/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/zcy/.conda/envs/neuralkg/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/zcy/.conda/envs/neuralkg/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/zcy/.conda/envs/neuralkg/lib/python3.8/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/zcy/.conda/envs/neuralkg/lib/python3.8/site-packages/urllib3/connection.py", line 179, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x7f4f6becfbe0>, 'Connection to api.wandb.ai timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zcy/.conda/envs/neuralkg/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/home/zcy/.conda/envs/neuralkg/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/zcy/.conda/envs/neuralkg/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f4f6becfbe0>, 'Connection to api.wandb.ai timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zcy/.conda/envs/neuralkg/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/zcy/.conda/envs/neuralkg/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 285, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/zcy/.conda/envs/neuralkg/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/zcy/.conda/envs/neuralkg/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/zcy/.conda/envs/neuralkg/lib/python3.8/site-packages/wandb/sdk/lib/gql_request.py", line 55, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/home/zcy/.conda/envs/neuralkg/lib/python3.8/site-packages/requests/sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/home/zcy/.conda/envs/neuralkg/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/zcy/.conda/envs/neuralkg/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/zcy/.conda/envs/neuralkg/lib/python3.8/site-packages/requests/adapters.py", line 553, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f4f6becfbe0>, 'Connection to api.wandb.ai timed out. (connect timeout=10)'))
+2023-05-28 23:32:04,780 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:05,723 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:32:06,797 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:08,853 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:09,863 DEBUG   SenderThread:106249 [sender.py:send():375] send: stats
+2023-05-28 23:32:09,863 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: stop_status
+2023-05-28 23:32:10,329 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/config.yaml
+2023-05-28 23:32:10,725 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:32:10,855 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:11,329 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:32:11,806 DEBUG   SenderThread:106249 [sender.py:send():375] send: metric
+2023-05-28 23:32:11,806 DEBUG   SenderThread:106249 [sender.py:send():375] send: metric
+2023-05-28 23:32:11,806 DEBUG   SenderThread:106249 [sender.py:send():375] send: metric
+2023-05-28 23:32:11,807 DEBUG   SenderThread:106249 [sender.py:send():375] send: history
+2023-05-28 23:32:11,807 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: summary_record
+2023-05-28 23:32:11,807 INFO    SenderThread:106249 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-28 23:32:11,812 DEBUG   SenderThread:106249 [sender.py:send():375] send: stats
+2023-05-28 23:32:12,335 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/wandb-summary.json
+2023-05-28 23:32:12,857 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:13,335 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:32:14,335 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:32:14,860 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:14,919 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:32:15,336 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:32:15,726 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:32:16,867 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:17,337 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:32:18,871 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:20,727 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:32:20,874 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:22,877 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:24,884 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:25,733 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:32:26,887 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:28,889 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:30,737 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:32:30,907 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:32,909 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:34,911 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:35,738 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:32:36,929 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:38,983 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:40,739 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:32:40,985 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:42,987 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:43,752 DEBUG   SenderThread:106249 [sender.py:send():375] send: stats
+2023-05-28 23:32:44,348 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/config.yaml
+2023-05-28 23:32:44,989 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:45,348 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:32:45,740 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:32:46,997 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:47,349 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:32:48,789 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:32:49,000 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:49,350 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:32:50,741 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:32:51,002 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:51,352 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:32:53,020 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:53,353 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:32:53,505 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-28 23:32:53,507 DEBUG   SenderThread:106249 [sender.py:send():375] send: history
+2023-05-28 23:32:53,508 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: summary_record
+2023-05-28 23:32:53,508 INFO    SenderThread:106249 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-28 23:32:53,914 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:32:54,353 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/wandb-summary.json
+2023-05-28 23:32:55,022 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:55,354 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:32:55,743 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:32:56,354 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:32:57,025 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:57,355 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:32:58,923 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:32:59,035 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:32:59,355 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:00,744 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:33:01,037 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:01,356 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:03,039 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:03,357 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:03,925 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:33:05,058 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:05,358 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:05,745 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:33:07,062 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:07,359 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:08,377 DEBUG   SenderThread:106249 [sender.py:send():375] send: stats
+2023-05-28 23:33:08,992 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:33:09,090 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:09,359 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:10,749 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:33:11,092 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:11,360 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:13,095 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:13,361 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:14,113 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:33:15,100 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:15,362 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:15,750 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:33:17,108 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:17,363 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:19,133 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:19,172 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:33:19,363 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:20,751 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:33:21,153 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:21,364 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:23,155 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:23,365 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:24,257 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:33:25,164 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:25,366 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:25,752 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:33:27,169 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:27,367 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:29,172 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:29,267 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:33:29,367 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:30,754 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:33:31,174 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:31,368 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:33,186 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:33,369 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:34,375 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:33:35,188 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:35,370 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:35,755 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:33:37,190 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:37,370 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:38,378 DEBUG   SenderThread:106249 [sender.py:send():375] send: stats
+2023-05-28 23:33:39,222 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:39,371 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:39,476 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:33:40,761 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:33:41,224 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:41,372 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:43,227 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:43,373 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:44,602 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:33:45,229 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:45,373 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:45,762 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:33:47,255 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:47,374 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:49,258 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:49,375 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:49,666 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:33:50,764 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:33:51,260 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:51,376 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:53,262 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:53,376 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:54,682 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:33:55,265 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:55,377 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:55,766 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:33:57,273 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:57,378 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:59,291 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:33:59,378 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:33:59,803 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:33:59,805 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-28 23:33:59,807 DEBUG   SenderThread:106249 [sender.py:send():375] send: history
+2023-05-28 23:33:59,808 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: summary_record
+2023-05-28 23:33:59,808 INFO    SenderThread:106249 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-28 23:34:00,379 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/wandb-summary.json
+2023-05-28 23:34:00,767 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:34:01,296 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:01,379 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:02,380 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:03,302 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:03,380 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:04,874 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:34:05,334 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:05,381 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:05,768 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:34:06,025 INFO    wandb-upload_0:106249 [upload_job.py:push():137] Uploaded file /tmp/tmpht67k3w8wandb/t7jez2tu-wandb-metadata.json
+2023-05-28 23:34:07,336 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:07,381 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:08,379 DEBUG   SenderThread:106249 [sender.py:send():375] send: stats
+2023-05-28 23:34:09,370 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:09,382 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:09,964 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:34:10,772 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:34:11,383 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:11,394 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:13,384 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:13,396 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:14,972 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:34:15,384 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:15,398 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:15,773 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:34:17,385 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:17,408 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:19,386 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:19,410 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:19,991 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:34:20,774 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:34:21,387 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:21,412 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:23,387 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:23,414 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:25,070 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:34:25,388 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:25,416 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:25,692 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-28 23:34:25,694 DEBUG   SenderThread:106249 [sender.py:send():375] send: metric
+2023-05-28 23:34:25,694 DEBUG   SenderThread:106249 [sender.py:send():375] send: metric
+2023-05-28 23:34:25,695 DEBUG   SenderThread:106249 [sender.py:send():375] send: metric
+2023-05-28 23:34:25,695 DEBUG   SenderThread:106249 [sender.py:send():375] send: metric
+2023-05-28 23:34:25,695 DEBUG   SenderThread:106249 [sender.py:send():375] send: metric
+2023-05-28 23:34:25,695 DEBUG   SenderThread:106249 [sender.py:send():375] send: history
+2023-05-28 23:34:25,695 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: summary_record
+2023-05-28 23:34:25,698 INFO    SenderThread:106249 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-28 23:34:25,777 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:34:26,389 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/wandb-summary.json
+2023-05-28 23:34:27,389 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:27,423 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:28,389 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:29,390 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:29,447 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:30,174 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:34:30,778 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:34:31,391 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:31,449 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:33,391 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:33,451 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:35,213 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:34:35,392 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:35,459 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:35,779 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:34:37,393 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:37,462 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:38,380 DEBUG   SenderThread:106249 [sender.py:send():375] send: stats
+2023-05-28 23:34:39,393 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:39,501 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:40,300 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:34:40,780 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:34:41,394 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:41,503 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:43,395 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:43,506 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:45,396 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:45,405 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:34:45,509 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:45,786 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:34:47,397 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:47,539 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:49,397 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:49,541 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:50,411 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:34:50,787 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:34:51,398 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:51,398 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/config.yaml
+2023-05-28 23:34:51,543 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:53,399 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:53,545 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:55,400 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:55,553 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:55,789 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:34:56,117 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:34:57,401 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:57,578 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:34:59,402 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:34:59,580 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:00,790 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:35:01,234 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:35:01,402 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:01,582 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:03,403 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:03,595 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:05,404 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:05,597 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:05,795 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:35:06,295 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:35:07,405 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:07,599 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:08,381 DEBUG   SenderThread:106249 [sender.py:send():375] send: stats
+2023-05-28 23:35:09,406 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:09,629 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:10,799 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:35:11,310 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:35:11,407 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:11,645 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:13,407 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:13,648 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:15,408 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:15,651 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:15,801 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:35:16,335 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:35:17,409 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:17,569 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-28 23:35:17,572 DEBUG   SenderThread:106249 [sender.py:send():375] send: history
+2023-05-28 23:35:17,572 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: summary_record
+2023-05-28 23:35:17,573 INFO    SenderThread:106249 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-28 23:35:17,660 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:18,409 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:18,410 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/wandb-summary.json
+2023-05-28 23:35:19,410 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:19,693 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:20,803 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:35:21,394 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:35:21,411 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:21,696 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:23,411 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:23,707 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:25,412 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:25,709 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:25,804 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:35:26,487 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:35:27,413 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:27,711 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:29,414 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:29,714 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:30,805 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:35:31,415 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:31,588 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:35:31,722 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:33,415 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:33,724 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:35,416 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:35,726 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:35,809 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:35:36,622 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:35:37,417 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:37,728 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:38,382 DEBUG   SenderThread:106249 [sender.py:send():375] send: stats
+2023-05-28 23:35:39,418 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:39,765 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:40,810 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:35:41,419 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:41,661 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:35:41,767 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:43,420 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:43,770 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:45,420 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:45,794 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:45,811 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:35:46,743 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:35:47,421 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:47,798 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:49,422 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:49,800 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:50,814 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:35:51,423 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:51,802 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:51,858 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:35:53,424 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:53,806 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:55,425 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:55,813 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:55,815 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:35:56,901 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:35:57,425 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:57,829 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:35:59,426 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:35:59,858 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:00,816 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:36:01,427 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:01,913 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:01,985 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:36:03,427 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:03,917 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:05,428 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:05,817 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:36:05,921 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:07,114 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:36:07,429 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:07,929 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:08,383 DEBUG   SenderThread:106249 [sender.py:send():375] send: stats
+2023-05-28 23:36:09,429 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:09,959 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:10,822 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:36:11,430 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:11,971 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:12,213 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:36:13,431 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:13,973 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:15,432 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:15,827 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:36:15,975 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:17,288 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:36:17,432 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:17,983 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:19,433 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:20,010 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:20,829 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:36:21,434 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:22,012 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:22,313 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:36:23,435 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:23,658 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-28 23:36:23,660 DEBUG   SenderThread:106249 [sender.py:send():375] send: history
+2023-05-28 23:36:23,660 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: summary_record
+2023-05-28 23:36:23,661 INFO    SenderThread:106249 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-28 23:36:24,014 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:24,435 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:24,435 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/wandb-summary.json
+2023-05-28 23:36:25,436 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:25,830 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:36:26,028 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:27,323 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:36:27,436 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:28,030 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:29,437 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:30,033 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:30,831 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:36:31,438 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:32,042 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:32,359 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:36:33,439 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:34,103 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:35,439 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:35,833 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:36:36,105 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:37,420 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:36:37,443 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:38,108 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:38,398 DEBUG   SenderThread:106249 [sender.py:send():375] send: stats
+2023-05-28 23:36:39,443 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:40,144 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:40,834 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:36:41,445 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:42,145 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:42,531 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:36:43,445 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:44,147 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:45,446 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:45,835 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:36:46,179 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:47,447 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:47,598 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:36:48,182 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:49,448 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:50,184 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:50,839 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:36:51,448 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:52,200 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:52,714 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:36:53,449 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:54,203 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:55,450 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:55,840 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:36:56,205 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:57,451 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:36:57,764 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:36:58,215 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:36:59,451 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:00,218 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:00,841 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:37:01,452 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:02,220 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:02,810 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:37:03,453 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:04,222 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:05,454 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:05,842 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:37:06,231 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:07,457 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:07,811 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:37:08,238 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:08,385 DEBUG   SenderThread:106249 [sender.py:send():375] send: stats
+2023-05-28 23:37:09,461 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:10,273 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:10,848 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:37:11,464 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:12,322 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:12,870 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:37:14,329 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:14,466 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:15,849 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:37:16,331 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:16,467 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:17,982 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:37:18,334 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:18,467 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:20,336 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:20,468 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:20,854 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:37:22,348 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:22,469 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:23,010 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:37:24,350 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:24,471 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:25,851 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:37:26,354 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:26,471 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:28,127 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:37:28,381 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:28,472 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:30,293 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-28 23:37:30,296 DEBUG   SenderThread:106249 [sender.py:send():375] send: history
+2023-05-28 23:37:30,296 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: summary_record
+2023-05-28 23:37:30,297 INFO    SenderThread:106249 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-28 23:37:30,406 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:30,474 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:30,474 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/wandb-summary.json
+2023-05-28 23:37:30,853 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:37:32,408 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:32,475 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:33,153 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:37:34,410 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:34,479 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:35,857 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:37:36,419 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:36,480 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:38,238 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:37:38,386 DEBUG   SenderThread:106249 [sender.py:send():375] send: stats
+2023-05-28 23:37:38,428 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:38,481 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:40,458 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:40,482 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:40,862 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:37:42,479 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:42,483 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:43,313 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:37:44,481 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:44,484 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:45,863 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:37:46,485 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:46,499 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:48,419 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:37:48,486 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:48,502 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:50,487 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:50,504 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:50,865 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:37:52,487 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:52,512 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:53,460 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:37:54,488 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:54,517 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:55,866 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:37:56,489 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:56,519 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:58,490 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:37:58,521 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:37:58,692 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:38:00,491 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:38:00,531 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:38:00,869 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:38:02,491 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:38:02,534 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:38:03,719 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:38:04,492 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:38:04,536 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:38:05,871 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:38:06,493 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:38:06,538 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:38:08,400 DEBUG   SenderThread:106249 [sender.py:send():375] send: stats
+2023-05-28 23:38:08,494 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:38:08,540 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:38:08,819 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:38:10,494 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:38:10,533 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-28 23:38:10,537 DEBUG   SenderThread:106249 [sender.py:send():375] send: history
+2023-05-28 23:38:10,538 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: summary_record
+2023-05-28 23:38:10,538 INFO    SenderThread:106249 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-28 23:38:10,579 ERROR   gpu       :106249 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-28 23:38:10,880 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-28 23:38:11,495 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/wandb-summary.json
+2023-05-28 23:38:11,731 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-28 23:38:11,734 DEBUG   SenderThread:106249 [sender.py:send():375] send: metric
+2023-05-28 23:38:11,734 DEBUG   SenderThread:106249 [sender.py:send():375] send: metric
+2023-05-28 23:38:11,734 DEBUG   SenderThread:106249 [sender.py:send():375] send: metric
+2023-05-28 23:38:11,734 DEBUG   SenderThread:106249 [sender.py:send():375] send: metric
+2023-05-28 23:38:11,734 DEBUG   SenderThread:106249 [sender.py:send():375] send: metric
+2023-05-28 23:38:11,734 DEBUG   SenderThread:106249 [sender.py:send():375] send: history
+2023-05-28 23:38:11,734 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: summary_record
+2023-05-28 23:38:11,735 INFO    SenderThread:106249 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-28 23:38:12,495 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:38:12,496 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/wandb-summary.json
+2023-05-28 23:38:12,533 DEBUG   SenderThread:106249 [sender.py:send():375] send: exit
+2023-05-28 23:38:12,533 INFO    SenderThread:106249 [sender.py:send_exit():598] handling exit code: 0
+2023-05-28 23:38:12,533 INFO    SenderThread:106249 [sender.py:send_exit():600] handling runtime: 454
+2023-05-28 23:38:12,534 INFO    SenderThread:106249 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-28 23:38:12,534 INFO    SenderThread:106249 [sender.py:send_exit():606] send defer
+2023-05-28 23:38:12,534 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: defer
+2023-05-28 23:38:12,534 INFO    HandlerThread:106249 [handler.py:handle_request_defer():170] handle defer: 0
+2023-05-28 23:38:12,535 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: defer
+2023-05-28 23:38:12,535 INFO    SenderThread:106249 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-05-28 23:38:12,535 INFO    SenderThread:106249 [sender.py:transition_state():626] send defer: 1
+2023-05-28 23:38:12,535 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: defer
+2023-05-28 23:38:12,535 INFO    HandlerThread:106249 [handler.py:handle_request_defer():170] handle defer: 1
+2023-05-28 23:38:12,535 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: defer
+2023-05-28 23:38:12,535 INFO    SenderThread:106249 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-05-28 23:38:12,536 INFO    SenderThread:106249 [sender.py:transition_state():626] send defer: 2
+2023-05-28 23:38:12,536 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: defer
+2023-05-28 23:38:12,536 INFO    HandlerThread:106249 [handler.py:handle_request_defer():170] handle defer: 2
+2023-05-28 23:38:12,536 INFO    HandlerThread:106249 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-28 23:38:12,537 DEBUG   SystemMonitor:106249 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-28 23:38:12,537 DEBUG   SystemMonitor:106249 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-28 23:38:12,537 INFO    HandlerThread:106249 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-28 23:38:12,539 INFO    HandlerThread:106249 [interfaces.py:finish():202] Joined disk monitor
+2023-05-28 23:38:12,569 INFO    HandlerThread:106249 [interfaces.py:finish():202] Joined gpu monitor
+2023-05-28 23:38:12,570 INFO    HandlerThread:106249 [interfaces.py:finish():202] Joined memory monitor
+2023-05-28 23:38:12,570 INFO    HandlerThread:106249 [interfaces.py:finish():202] Joined network monitor
+2023-05-28 23:38:12,570 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: defer
+2023-05-28 23:38:12,571 INFO    SenderThread:106249 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-05-28 23:38:12,571 INFO    SenderThread:106249 [sender.py:transition_state():626] send defer: 3
+2023-05-28 23:38:12,571 DEBUG   SenderThread:106249 [sender.py:send():375] send: stats
+2023-05-28 23:38:12,572 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: defer
+2023-05-28 23:38:12,572 INFO    HandlerThread:106249 [handler.py:handle_request_defer():170] handle defer: 3
+2023-05-28 23:38:12,572 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: defer
+2023-05-28 23:38:12,572 INFO    SenderThread:106249 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-05-28 23:38:12,572 INFO    SenderThread:106249 [sender.py:transition_state():626] send defer: 4
+2023-05-28 23:38:12,573 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: defer
+2023-05-28 23:38:12,573 INFO    HandlerThread:106249 [handler.py:handle_request_defer():170] handle defer: 4
+2023-05-28 23:38:12,573 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: defer
+2023-05-28 23:38:12,573 INFO    SenderThread:106249 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-05-28 23:38:12,573 INFO    SenderThread:106249 [sender.py:transition_state():626] send defer: 5
+2023-05-28 23:38:12,573 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: defer
+2023-05-28 23:38:12,574 INFO    HandlerThread:106249 [handler.py:handle_request_defer():170] handle defer: 5
+2023-05-28 23:38:12,574 DEBUG   SenderThread:106249 [sender.py:send():375] send: summary
+2023-05-28 23:38:12,575 INFO    SenderThread:106249 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-28 23:38:12,575 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: defer
+2023-05-28 23:38:12,575 INFO    SenderThread:106249 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-05-28 23:38:12,575 INFO    SenderThread:106249 [sender.py:transition_state():626] send defer: 6
+2023-05-28 23:38:12,575 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: defer
+2023-05-28 23:38:12,576 INFO    HandlerThread:106249 [handler.py:handle_request_defer():170] handle defer: 6
+2023-05-28 23:38:12,576 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: defer
+2023-05-28 23:38:12,576 INFO    SenderThread:106249 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-05-28 23:38:12,581 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: status_report
+2023-05-28 23:38:13,104 INFO    SenderThread:106249 [sender.py:transition_state():626] send defer: 7
+2023-05-28 23:38:13,105 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: defer
+2023-05-28 23:38:13,105 INFO    HandlerThread:106249 [handler.py:handle_request_defer():170] handle defer: 7
+2023-05-28 23:38:13,105 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: defer
+2023-05-28 23:38:13,105 INFO    SenderThread:106249 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-05-28 23:38:13,496 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/wandb-summary.json
+2023-05-28 23:38:13,496 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/config.yaml
+2023-05-28 23:38:13,533 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-28 23:38:14,181 INFO    SenderThread:106249 [sender.py:transition_state():626] send defer: 8
+2023-05-28 23:38:14,182 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: poll_exit
+2023-05-28 23:38:14,182 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: defer
+2023-05-28 23:38:14,182 INFO    HandlerThread:106249 [handler.py:handle_request_defer():170] handle defer: 8
+2023-05-28 23:38:14,182 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: defer
+2023-05-28 23:38:14,183 INFO    SenderThread:106249 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-05-28 23:38:14,183 INFO    SenderThread:106249 [sender.py:transition_state():626] send defer: 9
+2023-05-28 23:38:14,183 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: defer
+2023-05-28 23:38:14,183 INFO    HandlerThread:106249 [handler.py:handle_request_defer():170] handle defer: 9
+2023-05-28 23:38:14,184 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: defer
+2023-05-28 23:38:14,184 INFO    SenderThread:106249 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-05-28 23:38:14,184 INFO    SenderThread:106249 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-05-28 23:38:14,496 INFO    Thread-17 :106249 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log
+2023-05-28 23:38:14,497 INFO    SenderThread:106249 [dir_watcher.py:finish():395] scan: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files
+2023-05-28 23:38:14,497 INFO    SenderThread:106249 [dir_watcher.py:finish():409] scan save: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/config.yaml config.yaml
+2023-05-28 23:38:14,497 INFO    SenderThread:106249 [dir_watcher.py:finish():409] scan save: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/wandb-summary.json wandb-summary.json
+2023-05-28 23:38:14,497 INFO    SenderThread:106249 [dir_watcher.py:finish():409] scan save: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/requirements.txt requirements.txt
+2023-05-28 23:38:14,498 INFO    SenderThread:106249 [dir_watcher.py:finish():409] scan save: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/conda-environment.yaml conda-environment.yaml
+2023-05-28 23:38:14,498 INFO    SenderThread:106249 [dir_watcher.py:finish():409] scan save: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/wandb-metadata.json wandb-metadata.json
+2023-05-28 23:38:14,498 INFO    SenderThread:106249 [dir_watcher.py:finish():409] scan save: /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/output.log output.log
+2023-05-28 23:38:14,498 INFO    SenderThread:106249 [sender.py:transition_state():626] send defer: 10
+2023-05-28 23:38:14,504 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: defer
+2023-05-28 23:38:14,504 INFO    HandlerThread:106249 [handler.py:handle_request_defer():170] handle defer: 10
+2023-05-28 23:38:14,505 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: defer
+2023-05-28 23:38:14,505 INFO    SenderThread:106249 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-05-28 23:38:14,505 INFO    SenderThread:106249 [file_pusher.py:finish():168] shutting down file pusher
+2023-05-28 23:38:14,533 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-28 23:38:14,534 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: poll_exit
+2023-05-28 23:38:15,535 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-28 23:38:15,535 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: poll_exit
+2023-05-28 23:38:15,772 INFO    wandb-upload_0:106249 [upload_job.py:push():137] Uploaded file /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/config.yaml
+2023-05-28 23:38:15,982 INFO    wandb-upload_2:106249 [upload_job.py:push():137] Uploaded file /home/zcy/Workspace/code/Python/roberta-base-cold/wandb/run-20230528_233011-grfhwwl0/files/wandb-summary.json
+2023-05-28 23:38:16,536 DEBUG   HandlerThread:106249 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-28 23:38:16,537 DEBUG   SenderThread:106249 [sender.py:send_request():402] send_request: poll_exit
